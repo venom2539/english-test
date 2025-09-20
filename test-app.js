@@ -150,15 +150,16 @@ function initSwipeNavigation() {
   });
 }
 
-// Основной блок инициализации
+// Основной и единственный обработчик загрузки DOM
 document.addEventListener('DOMContentLoaded', function() {
+  // Обновляем общее число вопросов
   totalQuestionsSpan.textContent = testData.totalQuestions;
 
-  // Инициализируем навигацию
+  // Инициализируем навигацию стрелками и свайпами
   initKeyboardNavigation();
   initSwipeNavigation();
 
-  // Обработчики событий
+  // Обработчики кнопок
   startTestBtn.addEventListener('click', startTest);
   prevBtn.addEventListener('click', previousQuestion);
   nextBtn.addEventListener('click', nextQuestion);
@@ -167,23 +168,8 @@ document.addEventListener('DOMContentLoaded', function() {
   continueTestBtn.addEventListener('click', hideWarningModal);
   finishAnywayBtn.addEventListener('click', finishTestAnyway);
 
-  // Загружаем сохраненные данные
+  // Загружаем состояние теста из sessionStorage
   loadSavedTest();
-});
-
-
-    
-    // Обработчики событий
-    startTestBtn.addEventListener('click', startTest);
-    prevBtn.addEventListener('click', previousQuestion);
-    nextBtn.addEventListener('click', nextQuestion);
-    finishBtn.addEventListener('click', showFinishWarning);
-    retakeBtn.addEventListener('click', retakeTest);
-    continueTestBtn.addEventListener('click', hideWarningModal);
-    finishAnywayBtn.addEventListener('click', finishTestAnyway);
-    
-    // Загружаем сохраненные данные
-    loadSavedTest();
 });
 
 function startTest() {
