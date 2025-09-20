@@ -1100,22 +1100,24 @@ body {
 }
 
 .nav-btn.unanswered {
-  background: var(--color-secondary);
-  color: var(--color-text-secondary);
-  border: 1px solid var(--color-border);
+  background: #64748b; /* Серый */
+  color: white;
+  border: 1px solid #64748b;
 }
 
 .nav-btn.answered {
-  background: var(--color-success);
-  color: var(--color-btn-primary-text);
-  box-shadow: 0 0 10px rgba(var(--color-success-rgb), 0.3);
+  background: #22c55e; /* Зеленый */
+  color: white;
+  box-shadow: 0 0 10px rgba(34, 197, 94, 0.4);
+  border: 1px solid #22c55e;
 }
 
 .nav-btn.current {
-  background: var(--color-primary);
-  color: var(--color-btn-primary-text);
-  box-shadow: 0 0 15px rgba(var(--color-primary), 0.5);
+  background: #3b82f6; /* Синий */
+  color: white;
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.6);
   transform: scale(1.1);
+  border: 1px solid #3b82f6;
 }
 
 .nav-btn:hover:not(.current) {
@@ -1140,22 +1142,25 @@ body {
 }
 
 .legend-color {
-  width: var(--space-16);
-  height: var(--space-16);
-  border-radius: var(--radius-sm);
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .legend-color.answered {
-  background: var(--color-success);
+  background: #22c55e; /* Яркий зеленый */
+  border-color: #22c55e;
 }
 
 .legend-color.current {
-  background: var(--color-primary);
+  background: #3b82f6; /* Яркий синий */
+  border-color: #3b82f6;
 }
 
 .legend-color.unanswered {
-  background: var(--color-secondary);
-  border: 1px solid var(--color-border);
+  background: #64748b; /* Серый */
+  border-color: #64748b;
 }
 
 .question-container {
