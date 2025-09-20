@@ -125,53 +125,52 @@ const continueTestBtn = document.getElementById('continueTestBtn');
 const finishAnywayBtn = document.getElementById('finishAnywayBtn');
 const questionNavButtons = document.getElementById('questionNavButtons');
 
-// Инициализация
-document.addEventListener('DOMContentLoaded', function() {
-    totalQuestionsSpan.textContent = testData.totalQuestions;
-document.addEventListener('DOMContentLoaded', function() {
-  // ...ваши существующие слушатели
-  initKeyboardNavigation();
-  initSwipeNavigation();
-});
-
+// Функции навигации
 function initKeyboardNavigation() {
   document.addEventListener('keydown', (e) => {
     if (testPage.classList.contains('active')) {
-      if (e.key === 'ArrowLeft') {
-        previousQuestion();
-      } else if (e.key === 'ArrowRight') {
-        nextQuestion();
-      }
+      if (e.key === 'ArrowLeft') previousQuestion();
+      if (e.key === 'ArrowRight') nextQuestion();
     }
   });
 }
 
 function initSwipeNavigation() {
-  let startX = 0;
-  let endX = 0;
-  
-  const threshold = 50; // минимальное расстояние свайпа
-  
-  testPage.addEventListener('touchstart', (e) => {
+  let startX = 0, endX = 0, threshold = 50;
+  testPage.addEventListener('touchstart', e => {
     startX = e.changedTouches[0].screenX;
   });
-  
-  testPage.addEventListener('touchend', (e) => {
+  testPage.addEventListener('touchend', e => {
     endX = e.changedTouches[0].screenX;
-    handleSwipe();
-  });
-  
-  function handleSwipe() {
     const diff = endX - startX;
     if (Math.abs(diff) > threshold) {
-      if (diff > 0) {
-        previousQuestion();
-      } else {
-        nextQuestion();
-      }
+      if (diff > 0) previousQuestion();
+      else nextQuestion();
     }
-  }
+  });
 }
+
+// Основной блок инициализации
+document.addEventListener('DOMContentLoaded', function() {
+  totalQuestionsSpan.textContent = testData.totalQuestions;
+
+  // Инициализируем навигацию
+  initKeyboardNavigation();
+  initSwipeNavigation();
+
+  // Обработчики событий
+  startTestBtn.addEventListener('click', startTest);
+  prevBtn.addEventListener('click', previousQuestion);
+  nextBtn.addEventListener('click', nextQuestion);
+  finishBtn.addEventListener('click', showFinishWarning);
+  retakeBtn.addEventListener('click', retakeTest);
+  continueTestBtn.addEventListener('click', hideWarningModal);
+  finishAnywayBtn.addEventListener('click', finishTestAnyway);
+
+  // Загружаем сохраненные данные
+  loadSavedTest();
+});
+
 
     
     // Обработчики событий
