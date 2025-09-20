@@ -762,15 +762,33 @@ body {
 /* Header Navigation */
 .test-header-nav {
   background: var(--color-surface);
-  border-bottom: 1px solid var(--color-border);
-  padding: var(--space-16) 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem 0;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
   box-shadow: var(--shadow-md);
+  min-height: 70px; /* Задаем минимальную высоту */
 }
+
+@media (max-width: 768px) {
+  .nav-content {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  
+  .test-header-nav {
+    min-height: 90px; /* Больше высота для двух строк */
+  }
+  
+  .page {
+    padding-top: 110px; /* Соответственно больше отступ */
+  }
+}
+
 
 .nav-content {
   display: flex;
@@ -800,7 +818,18 @@ body {
 .page {
   display: none;
   min-height: 100vh;
-  padding-top: 80px; /* Для фиксированного header */
+  padding-top: 140px; /* Для desktop */
+}
+
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+  .page {
+    padding-top: 160px; /* Больше отступ для мобильных */
+  }
+  
+  .test-header-nav {
+    padding: 0.5rem 0; /* Уменьшаем высоту header на мобильных */
+  }
 }
 
 .page.active {
