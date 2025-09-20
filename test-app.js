@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Загружаем состояние теста из sessionStorage
   loadSavedTest();
-});
+ });
 
 function startTest() {
     welcomePage.classList.remove('active');
