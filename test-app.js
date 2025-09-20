@@ -108,6 +108,7 @@ let testStartTime;
 // Элементы DOM
 const welcomePage = document.getElementById('welcomePage');
 const testPage = document.getElementById('testPage');
+console.log('testPage найден:', testPage);
 const resultsPage = document.getElementById('resultsPage');
 const startTestBtn = document.getElementById('startTestBtn');
 const questionContent = document.getElementById('questionContent');
@@ -127,6 +128,51 @@ const questionNavButtons = document.getElementById('questionNavButtons');
 // Инициализация
 document.addEventListener('DOMContentLoaded', function() {
     totalQuestionsSpan.textContent = testData.totalQuestions;
+document.addEventListener('DOMContentLoaded', function() {
+  // ...ваши существующие слушатели
+  initKeyboardNavigation();
+  initSwipeNavigation();
+});
+
+function initKeyboardNavigation() {
+  document.addEventListener('keydown', (e) => {
+    if (testPage.classList.contains('active')) {
+      if (e.key === 'ArrowLeft') {
+        previousQuestion();
+      } else if (e.key === 'ArrowRight') {
+        nextQuestion();
+      }
+    }
+  });
+}
+
+function initSwipeNavigation() {
+  let startX = 0;
+  let endX = 0;
+  
+  const threshold = 50; // минимальное расстояние свайпа
+  
+  testPage.addEventListener('touchstart', (e) => {
+    startX = e.changedTouches[0].screenX;
+  });
+  
+  testPage.addEventListener('touchend', (e) => {
+    endX = e.changedTouches[0].screenX;
+    handleSwipe();
+  });
+  
+  function handleSwipe() {
+    const diff = endX - startX;
+    if (Math.abs(diff) > threshold) {
+      if (diff > 0) {
+        previousQuestion();
+      } else {
+        nextQuestion();
+      }
+    }
+  }
+}
+
     
     // Обработчики событий
     startTestBtn.addEventListener('click', startTest);
