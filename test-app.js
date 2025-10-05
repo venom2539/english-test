@@ -32,23 +32,23 @@ const testData = {
         // Чтение
         { 
             id: 26, 
-            context: "Nora recently switched to a hybrid work schedule, spending three days in the office and two at home. She says the change improved her focus and allowed more time for exercise. However, coordinating meetings across teams has become slightly more complicated.",
+            context: "Nora switched to a hybrid work schedule, spending three days in the office and two at home. She noted that the change improved her focus on work and brought a lot of benefits. However, the coordination of meetings between the teams has become more difficult recently.",
             text: "How many days does Nora work from home?", 
             options: ["One", "Two", "Three", "Four"], 
             correct: 1 
         },
         { 
             id: 27, 
-            context: "Nora recently switched to a hybrid work schedule, spending three days in the office and two at home. She says the change improved her focus and allowed more time for exercise. However, coordinating meetings across teams has become slightly more complicated.",
-            text: "What improved due to the change?", 
-            options: ["Salary", "Focus", "Commute time", "Office space"], 
+            context: "Nora switched to a hybrid work schedule, spending three days in the office and two at home. She noted that the change improved her focus on work and brought a lot of benefits. However, the coordination of meetings between the teams has become more difficult recently.",
+            text: "What did she get from improvements in the work schedule?", 
+            options: ["Salary", "Focus on work", "Home-to-work travel time", "Office space"], 
             correct: 1 
         },
         { 
             id: 28, 
-            context: "Nora recently switched to a hybrid work schedule, spending three days in the office and two at home. She says the change improved her focus and allowed more time for exercise. However, coordinating meetings across teams has become slightly more complicated.",
-            text: "What became more complicated?", 
-            options: ["Writing reports", "Coordinating meetings", "Using software", "Booking holidays"], 
+            context: "Nora switched to a hybrid work schedule, spending three days in the office and two at home. She noted that the change improved her focus on work and brought a lot of benefits. However, the coordination of meetings between the teams has become more difficult recently.",
+            text: "What has become more difficult in the work process recently?", 
+            options: ["Writing reports", "Coordinating meetings", "Software use", "Work-life balance"], 
             correct: 1 
         },
         { 
