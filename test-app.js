@@ -61,7 +61,7 @@ const testData = {
         { 
             id: 30, 
             context: "The new exhibition is dedicated to climate changes. There are some solutions in the field of fight against climate changes, such as renewable energy projects and urban greening. Interactive displays let visitors simulate reduction of emissions by changing transport and household habits.",
-            text: "What can visitors do at the displays?", 
+            text: "What can visitors do using the displays?", 
             options: ["Construct a turbine", "Simulate reduction of emissions", "Watch a film only", "Plant trees"], 
             correct: 1 
         },
@@ -75,7 +75,7 @@ const testData = {
         { 
             id: 32, 
             context: "The new exhibition is dedicated to climate changes. There are some solutions in the field of fight against climate changes, such as renewable energy projects and urban greening. Interactive displays let visitors simulate reduction of emissions by changing transport and household habits.",
-            text: "What will reduce the effect of emissions using interactive displays", 
+            text: "What will reduce the effect of emissions using interactive displays?", 
             options: ["Using solar and wind power", "Changing transport and household habits", "Shift to renewable energy", "Implementing energy efficiency"], 
             correct: 1 
         },
