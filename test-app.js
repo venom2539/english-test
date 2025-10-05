@@ -40,7 +40,7 @@ const testData = {
         { 
             id: 27, 
             context: "Nora switched to a hybrid work schedule, spending three days in the office and two at home. She noted that the change improved her focus on work and brought a lot of benefits. However, the coordination of meetings between the teams has become more difficult recently.",
-            text: "What did she get from improvements in the work schedule?", 
+            text: "What got better in her work process?", 
             options: ["Salary", "Focus on work", "Home-to-work travel time", "Office space"], 
             correct: 1 
         },
