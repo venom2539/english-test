@@ -53,30 +53,30 @@ const testData = {
         },
         { 
             id: 29, 
-            context: "The museum's new exhibition explores climate solutions, highlighting renewable energy projects and urban green spaces. Interactive displays let visitors simulate reducing emissions by changing transport choices and household habits.",
+            context: "The new exhibition is dedicated to climate changes. There are some solutions in the field of fight against climate changes, such as renewable energy projects and urban greening. Interactive displays let visitors simulate reduction of emissions by changing transport and household habits.",
             text: "What does the exhibition explore?", 
-            options: ["Climate solutions", "Ancient history", "Space travel", "Ocean art"], 
+            options: ["Climate solutions", "Ancient history", "Space travel", "Ocean environment"], 
             correct: 0 
         },
         { 
             id: 30, 
-            context: "The museum's new exhibition explores climate solutions, highlighting renewable energy projects and urban green spaces. Interactive displays let visitors simulate reducing emissions by changing transport choices and household habits.",
+            context: "The new exhibition is dedicated to climate changes. There are some solutions in the field of fight against climate changes, such as renewable energy projects and urban greening. Interactive displays let visitors simulate reduction of emissions by changing transport and household habits.",
             text: "What can visitors do at the displays?", 
-            options: ["Build a turbine", "Simulate reducing emissions", "Watch a film only", "Plant trees"], 
+            options: ["Construct a turbine", "Simulate reduction of emissions", "Watch a film only", "Plant trees"], 
             correct: 1 
         },
         { 
             id: 31, 
-            context: "The museum's new exhibition explores climate solutions, highlighting renewable energy projects and urban green spaces. Interactive displays let visitors simulate reducing emissions by changing transport choices and household habits.",
-            text: "Which solutions are highlighted?", 
-            options: ["Fossil fuels", "Renewable energy and green spaces", "Nuclear waste storage", "Geoengineering only"], 
+            context: "The new exhibition is dedicated to climate changes. There are some solutions in the field of fight against climate changes, such as renewable energy projects and urban greening. Interactive displays let visitors simulate reduction of emissions by changing transport and household habits.",
+            text: "Which solutions are presented?", 
+            options: ["Fossil fuels", "Renewable energy and green spaces", "Waste treatment", "Geoengineering only"], 
             correct: 1 
         },
         { 
             id: 32, 
-            context: "The museum's new exhibition explores climate solutions, highlighting renewable energy projects and urban green spaces. Interactive displays let visitors simulate reducing emissions by changing transport choices and household habits.",
-            text: "What choices affect emissions in the simulation?", 
-            options: ["Clothing", "Transport and household habits", "Music", "Sports"], 
+            context: "The new exhibition is dedicated to climate changes. There are some solutions in the field of fight against climate changes, such as renewable energy projects and urban greening. Interactive displays let visitors simulate reduction of emissions by changing transport and household habits.",
+            text: "What will reduce the effect of emissions using interactive displays", 
+            options: ["Using solar and wind power", "Changing transport and household habits", "Shift to renewable energy", "Implementing energy efficiency"], 
             correct: 1 
         },
         // Use of English
