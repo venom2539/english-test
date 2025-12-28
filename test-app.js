@@ -40,7 +40,7 @@ const testData = {
         { 
             id: 27, 
             context: "Nora switched to a hybrid work schedule, spending three days in the office and two at home. She noted that the change improved her focus on work and brought a lot of benefits. However, the coordination of meetings between the teams has become more difficult recently.",
-            text: "What got better in her work process?", 
+            text: "What has changed for the better in her workflow?", 
             options: ["Salary", "Focus on work", "Home-to-work travel time", "Office space"], 
             correct: 1 
         },
@@ -54,14 +54,14 @@ const testData = {
         { 
             id: 29, 
             context: "The new exhibition is dedicated to climate changes. There are some solutions in the field of fight against climate changes, such as renewable energy projects and urban greening. Interactive displays let visitors simulate reduction of emissions by changing transport and household habits.",
-            text: "What does the exhibition explore?", 
+            text: "What is the exhibition dedicated to?", 
             options: ["Climate solutions", "Ancient history", "Space travel", "Ocean environment"], 
             correct: 0 
         },
         { 
             id: 30, 
             context: "The new exhibition is dedicated to climate changes. There are some solutions in the field of fight against climate changes, such as renewable energy projects and urban greening. Interactive displays let visitors simulate reduction of emissions by changing transport and household habits.",
-            text: "What can visitors do using the displays?", 
+            text: "What actions can be demonstrated on interactive displays?", 
             options: ["Construct a turbine", "Simulate reduction of emissions", "Watch a film only", "Plant trees"], 
             correct: 1 
         },
@@ -69,7 +69,7 @@ const testData = {
             id: 31, 
             context: "The new exhibition is dedicated to climate changes. There are some solutions in the field of fight against climate changes, such as renewable energy projects and urban greening. Interactive displays let visitors simulate reduction of emissions by changing transport and household habits.",
             text: "Which solutions are presented?", 
-            options: ["Fossil fuels", "Renewable energy and green spaces", "Waste treatment", "Geoengineering only"], 
+            options: ["Fossil fuels", "Renewable energy projects and green spaces", "Waste treatment", "Geoengineering only"], 
             correct: 1 
         },
         { 
